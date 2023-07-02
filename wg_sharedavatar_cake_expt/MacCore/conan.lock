@@ -1,0 +1,24 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "AvatarCore:docs=False\nAvatarCore:fPIC=True\nAvatarCore:python_executable=\nAvatarCore:python_version=3.9\nAvatarCore:shared=False",
+    "requires": [
+     "1"
+    ],
+    "path": "../.conan/conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "AvatarCore/2.3.0",
+    "options": "docs=False\nfPIC=True\npython_executable=\npython_version=3.9\nshared=False",
+    "package_id": "46bcd792910b74a0e4ed230ba0eb49551adb1f5c",
+    "prev": "0",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=apple-clang\ncompiler.cppstd=17\ncompiler.libcxx=libc++\ncompiler.version=13.1\nos=Macos\nos_build=Macos\n[options]\nAvatarCore:fPIC=True\nAvatarCore:python_version=3.9\n[build_requires]\n[env]\nCFLAGS=-Wno-error=unused\nCONAN_CMAKE_SYSTEM_PROCESSOR=x86_64\nCXXFLAGS=-Wno-error=unused"
+}

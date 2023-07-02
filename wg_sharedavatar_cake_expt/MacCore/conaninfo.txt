@@ -1,0 +1,43 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=apple-clang
+    compiler.cppstd=17
+    compiler.libcxx=libc++
+    compiler.version=13.1
+    os=Macos
+
+[requires]
+    AvatarCore/2.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=apple-clang
+    compiler.cppstd=17
+    compiler.libcxx=libc++
+    compiler.version=13.1
+    os=Macos
+    os_build=Macos
+
+[full_requires]
+    AvatarCore/2.3.0:46bcd792910b74a0e4ed230ba0eb49551adb1f5c
+
+[full_options]
+    AvatarCore:docs=False
+    AvatarCore:fPIC=True
+    AvatarCore:python_executable=
+    AvatarCore:python_version=3.9
+    AvatarCore:shared=False
+
+[recipe_hash]
+
+
+[env]
+    CFLAGS=-Wno-error=unused
+    CONAN_CMAKE_SYSTEM_PROCESSOR=x86_64
+    CXXFLAGS=-Wno-error=unused

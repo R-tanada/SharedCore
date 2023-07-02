@@ -1,0 +1,30 @@
+{
+ "options": [
+  [
+   "AvatarCore:docs",
+   "False"
+  ],
+  [
+   "AvatarCore:fPIC",
+   "True"
+  ],
+  [
+   "AvatarCore:python_executable",
+   ""
+  ],
+  [
+   "AvatarCore:python_version",
+   "3.9"
+  ],
+  [
+   "AvatarCore:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}

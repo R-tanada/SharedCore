@@ -1,0 +1,9 @@
+#ifndef VERSION_CONFIG_H
+#define VERSION_CONFIG_H
+
+#define CORE_SDK "2.3.0"
+
+#define AVATAR_CORE_BUILD_DATE __DATE__
+#define AVATAR_CORE_BUILD_TIME __TIME__
+
+#endif // VERSION_CONFIG_H
