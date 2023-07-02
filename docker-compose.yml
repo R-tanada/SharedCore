@@ -1,0 +1,12 @@
+version: '3'
+services:
+  expt:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: cake-expt
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 4004:4004
+    tty: true

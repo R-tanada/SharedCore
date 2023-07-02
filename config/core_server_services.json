@@ -1,0 +1,209 @@
+{
+    "Name": "Services/ServerCloud",
+    "Services": [
+        {
+            "Type": "CloudProxy",
+            "Settings": {
+                "Alias": "Server/cloud",
+                "DefaultRunning": "true",
+                "CreateSession": "true",
+                "PingPongRetries": 2
+            }
+        },
+        {
+            "Type": "RTPReceiver",
+            "Settings": {
+                "Alias": "Server/receiver/data/client/1",
+                "DefaultRunning": "false",
+                "PeerIP": "127.0.0.1",
+                "Data": [
+                    {
+                        "ID": "11",
+                        "Name": "Data",
+                        "RTPPort": "10501",
+                        "Sink": {
+                            "Type": "shmem",
+                            "Resource": "client-data-1",
+                            "Size": "4096"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPReceiver",
+            "Settings": {
+                "Alias": "Server/receiver/data/client/2",
+                "DefaultRunning": "false",
+                "PeerIP": "127.0.0.1",
+                "Data": [
+                    {
+                        "ID": "12",
+                        "Name": "Data",
+                        "RTPPort": "10502",
+                        "Sink": {
+                            "Type": "shmem",
+                            "Resource": "client-data-2",
+                            "Size": "4096"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPReceiver",
+            "Settings": {
+                "Alias": "Server/receiver/data/client/3",
+                "DefaultRunning": "false",
+                "PeerIP": "127.0.0.1",
+                "Data": [
+                    {
+                        "ID": "13",
+                        "Name": "Data",
+                        "RTPPort": "10503",
+                        "Sink": {
+                            "Type": "shmem",
+                            "Resource": "client-data-3",
+                            "Size": "4096"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPReceiver",
+            "Settings": {
+                "Alias": "Server/receiver/data/client/4",
+                "DefaultRunning": "false",
+                "PeerIP": "127.0.0.1",
+                "Data": [
+                    {
+                        "ID": "14",
+                        "Name": "Data",
+                        "RTPPort": "10504",
+                        "Sink": {
+                            "Type": "shmem",
+                            "Resource": "client-data-4",
+                            "Size": "4096"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPReceiver",
+            "Settings": {
+                "Alias": "Server/receiver/data/client/5",
+                "DefaultRunning": "false",
+                "PeerIP": "127.0.0.1",
+                "Data": [
+                    {
+                        "ID": "15",
+                        "Name": "Data",
+                        "RTPPort": "10505",
+                        "Sink": {
+                            "Type": "shmem",
+                            "Resource": "client-data-5",
+                            "Size": "4096"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPSender",
+            "Settings": {
+                "Alias": "Server/sender/data/server",
+                "DefaultRunning": "true",
+                "PeerIP": "127.0.0.1",
+                "Data": [
+                    {
+                        "ID": "21",
+                        "Name": "Data",
+                        "Reliable": "false",
+                        "RTPPort": "10601",
+                        "Source": {
+                            "Type": "shmem",
+                            "Resource": "server-data"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPSender",
+            "Settings": {
+                "Alias": "Server/sender/video/micro",
+                "DefaultRunning": "true",
+                "PeerIP": "127.0.0.1",
+                "RTCP": "false",
+                "Video": [
+                    {
+                        "ID": "31",
+                        "Name": "MicroCamera",
+                        "RTPPort": "10701",
+                        "Source": {
+                            "Type": "shmem",
+                            "Resource": "micro-camera"
+                        },
+                        "Encoder": {
+                            "Encoder": "x264",
+                            "Bitrate": "1000",
+                            "Quality": "7"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPSender",
+            "Settings": {
+                "Alias": "Server/sender/video/fruit",
+                "DefaultRunning": "true",
+                "PeerIP": "127.0.0.1",
+                "RTCP": "false",
+                "Video": [
+                    {
+                        "ID": "32",
+                        "Name": "FruitCamera",
+                        "RTPPort": "10702",
+                        "Source": {
+                            "Type": "shmem",
+                            "Resource": "fruit-camera"
+                        },
+                        "Encoder": {
+                            "Encoder": "x264",
+                            "Bitrate": "1000",
+                            "Quality": "7"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Type": "RTPSender",
+            "Settings": {
+                "Alias": "Server/sender/video/cake",
+                "DefaultRunning": "true",
+                "PeerIP": "127.0.0.1",
+                "RTCP": "false",
+                "Video": [
+                    {
+                        "ID": "33",
+                        "Name": "CakeCamera",
+                        "RTPPort": "10703",
+                        "Source": {
+                            "Type": "shmem",
+                            "Resource": "cake-camera"
+                        },
+                        "Encoder": {
+                            "Encoder": "x264",
+                            "Bitrate": "1000",
+                            "Quality": "7"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

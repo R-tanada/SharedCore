@@ -1,0 +1,53 @@
+{
+    "Name": "Services/Server",
+    "Services": [
+        {
+            "Type": "VideoCapture",
+            "Settings": {
+                "Alias": "Capture/video/micro",
+                "DefaultRunning": "false",
+                "Source": {
+                    "Type": "camera",
+                    "CameraIndex": "\\\\\\\\\\?\\\\usb\\#vid_046d\\&pid_0893\\&mi_00\\#7\\&1c7504db\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global"
+                },
+                "Sink": {
+                    "Type": "shmem",
+                    "Resource": "micro-camera",
+                    "Size": "6220800"
+                }
+            }
+        },
+        {
+            "Type": "VideoCapture",
+            "Settings": {
+                "Alias": "Capture/video/fruit",
+                "DefaultRunning": "false",
+                "Source": {
+                    "Type": "camera",
+                    "CameraIndex": "\\\\\\\\\\?\\\\usb\\#vid_046d\\&pid_0893\\&mi_00\\#6\\&1ab08d8e\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global"
+                },
+                "Sink": {
+                    "Type": "shmem",
+                    "Resource": "fruit-camera",
+                    "Size": "6220800"
+                }
+            }
+        },
+        {
+            "Type": "VideoCapture",
+            "Settings": {
+                "Alias": "Capture/video/cake",
+                "DefaultRunning": "false",
+                "Source": {
+                    "Type": "camera",
+                    "CameraIndex": "\\\\\\\\\\?\\\\usb\\#vid_046d\\&pid_0893\\&mi_00\\#6\\&b094355\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global"
+                },
+                "Sink": {
+                    "Type": "shmem",
+                    "Resource": "cake-camera",
+                    "Size": "6220800"
+                }
+            }
+        }
+    ]
+}

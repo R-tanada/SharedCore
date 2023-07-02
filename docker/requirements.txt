@@ -1,0 +1,15 @@
+black
+conan==1.54.0
+isort
+python-json-logger
+pandas
+numpy
+pyside6
+getkey
+pyserial
+pyopengl
+pyqtgraph
+pyopengl
+pyopengl-accelerate
+opencv-contrib-python
+superqt

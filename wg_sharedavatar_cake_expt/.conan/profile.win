@@ -1,0 +1,16 @@
+[settings]
+os=Windows
+os_build=Windows
+arch=x86_64
+arch_build=x86_64
+compiler="Visual Studio"
+compiler.version=16
+compiler.cppstd=17
+compiler.runtime=MD
+build_type=Release
+[options]
+AvatarCore:python_version=3.9
+AvatarCore:python_executable=C:\Python39\python.exe
+[build_requires]
+[env]
+CONAN_CMAKE_SYSTEM_PROCESSOR=AMD64

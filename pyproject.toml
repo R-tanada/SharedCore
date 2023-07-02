@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "wg-sharedavatar-cake-expt"
+version = "0.1.0"
+description = ""
+authors = ["takumi-nishimura <clp13218@nitech.jp>"]
+readme = "README.md"
+packages = [{include = "wg_sharedavatar_cake_expt"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+python-json-logger = "^2.0.4"
+pyside6 = "^6.4.2"
+numpy = "^1.24.1"
+getkey = "^0.6.5"
+pyserial = "^3.5"
+pyqtgraph = "^0.13.1"
+pyopengl = "^3.1.6"
+pyopengl-accelerate = "^3.1.6"
+opencv-contrib-python = "^4.7.0.68"
+superqt = "^0.4.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+conan = "1.54.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

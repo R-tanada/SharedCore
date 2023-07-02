@@ -1,0 +1,6 @@
+[requires]
+AvatarCore/2.3.0
+
+[generators]
+virtualenv
+virtualrunenv
